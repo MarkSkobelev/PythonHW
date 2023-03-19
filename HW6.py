@@ -36,7 +36,7 @@ for element in words:
         count[element] += 1
     else:
         count[element] = 1
-sorted_values = sorted(count.items(), key=lambda tpl: tpl[1], reverse=True)
+sorted_values = sorted(count.items(), key=lambda x: x[1], reverse=True)
 print(dict(sorted_values[0:10]))
 
 
